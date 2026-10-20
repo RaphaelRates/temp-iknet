@@ -1,0 +1,8 @@
+menu "IKNET - Sensor de temperatura"
+    config IKNET_SENSOR_GPIO
+        int "GPIO de dados do DS18B20 (DQ)"
+        range 0 48
+        default 38
+        help
+            Ligue DQ ao GPIO38 e instale pull-up de 4,7 kohms entre DQ e 3V3.
+endmenu
